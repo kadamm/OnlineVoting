@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(secure.webp);
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.container{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+header{
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+.input-field{
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.input{
+
+    margin: 5px 0px;
+    height: 35px;
+    width: 265px;
+    padding: 7px;
+}
+
+::-webkit-input-placeholder{
+     color:rgb(14, 14, 14);
+}
+.Submit{
+    height: 35px;
+    width: 265px;
+    margin: 10px 0px;
+    background-color: rgb(9, 9, 9);
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+
+}
+.Submit:hover{
+    box-shadow: 1px 5px 7px 1px rgba(28, 27, 27, 0.954);
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: medium;
+    color: rgb(11, 11, 11);
+    margin-top: 10px;
+}
+label a{
+    color: rgb(6, 5, 5);
+}

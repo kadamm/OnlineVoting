@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlineVoting</title>
+    <link rel="stylesheet" href="/css/candidateregistration.css">
+    <link rel="stylesheet" href="/css/Home.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    
+
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            
+                <p><u>Online Voting</u></p>
+            </div>
+            <ul>
+            <li><a href="/Home">Home</a></li>
+            <li><a href="/VoterLogin"> Voter Login</a></li>
+            <li><a href="/VoterRegistration">Voter Registration</a></li>
+            <li><a href="/candidateRegistration">Candidate Registration</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+   
+    <div class="container">
+        <div class="title">Registration</div><br>
+        <form action="register" method="post">
+            <div class="Candidate_details">
+                <div class="input_box">
+                    <span class="details">Candidate Name:</span>
+                    <input type="text" name="fname" placeholder="Enter Your Name" required>
+                </div>
+                <div class="input_box">
+                    <span class="details">Phone Number:</span>
+                    <input type="text" name="phonenumber" placeholder="Enter Your Phone Number" required><br>
+                </div>
+                <div class="input_box">
+                    <span class="details">Candidate Voter ID:</span>
+                    <input type="text" name="voterid" placeholder="Enter Your Voter ID" required><br>
+                </div>
+                <div class="input_box">
+                    <span class="details">Adhar Number:</span>
+                    <input type="text" name="adhar" placeholder="Enter Adhar Number" required><br>
+                </div>
+                
+                <div class="input_box">
+                    <span class="details">Date Of Birth:</span>
+                    <input type="date" name="dob" placeholder="Enter Your DOB" required><br>
+                </div>
+                    <div class="input_box">
+                    <span class="details"> Permanent Address:</span>
+                    <input type="text" name="address" placeholder="Enter Your  Permanent Address" required><br>
+                </div>
+                <div class="input_box">
+                    <label for="photo">Upload Your Photo:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+                  </div>
+                  
+                  <div class="input_box">
+                    <label for="party-symbol">Upload Party Symbol:</label>
+                    <input type="file" id="party-symbol" name="party-symbol" accept="image/*" required>
+                  </div>
+                  
+                <div class="Status">
+                    <span class="details">Maritual Status:</span>
+                    <div class="category">
+                        <label for="Married">
+                            <input type="radio" value="Married" name="mstatus" id="Married">Married
+                        </label><br>
+                        <label for="Unmarried">
+                            <input type="radio" value="Unmarried" name="mstatus" id="Unmarried">Unmarried
+                        </label><br>
+                    </div>
+                </div>
+                
+                <div class="gender">
+                    <span class="details">Gender:</span>
+                    <div class="category">
+                        <label for="Male">
+                            <input type="radio" value="Male" name="gender" id="Male">Male
+                        </label><br>
+                        <label for="Female">
+                            <input type="radio" value="Female" name="gender" id="Female">Female
+                        </label><br>
+                        <label for="Other">
+                            <input type="radio" value="Other" name="gender" id="Other">Other
+                        </label><br>
+
+                    </div>
+             </div>
+                     <div class="button">
+                        <input type="submit" class="button" value="Submit">
+                    </div>
+            </div>
+        </form>
+
+    </div>
+    <footer class="foot">
+        <div class="contain">
+            <div class="row">
+              
+                
+                <div class="col">
+                    <h4><u>About</u></h4>
+                    <ul>
+                     <li><a href="/contact">Contact</a></li>
+                     <li><a href="#">Get help</a></li>
+                    </ul>
+                   </div>
+    
+                   
+                <div class="col">
+                    <h4><u>Resources</u></h4>
+                    <ul>
+                     <li><a href="/info">What is Online Voting System?</a></li>
+                     <li><a href="/info2">How to Vote?</a></li>
+                     <li><a href="/info2">Why Online Voting System is Useful?</a></li>
+                    </ul>
+                   </div>
+            </div>
+        </div>
+    
+    
+    
+    </footer>
+</body>
+</html>

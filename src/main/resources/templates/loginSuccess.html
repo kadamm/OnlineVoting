@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>welcome</title>
+    <link rel="stylesheet" href="/css/candidateregistration.css">
+    <link rel="stylesheet" href="/css/Home.css">
+    <link rel="stylesheet" href="/css/footer.css">
+</head>
+<body>
+	
+	    <nav>
+        <div class="logo">
+            
+                <p><u>Online Voting</u></p>
+            </div>
+            <ul>
+            <li><a href="/Home">Home</a></li>
+            <li><a href="/VoterLogin"> Voter Login</a></li>
+            <li><a href="/VoterRegistration">Voter Registration</a></li>
+            <li><a href="/candidateRegistration">Candidate Registration</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+  <div class="container">
+<h1> Success page</h1>
+
+<h2 style="color: aqua;"> Congratulation! Login successful</h2>
+
+<h2 th:text="${message}">Message</h2>
+  </div>
+
+</body>
+</html>
